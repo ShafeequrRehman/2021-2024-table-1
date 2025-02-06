@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Background Image</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+            /* Add Background Image */
+            background-image: url('https://raw.githubusercontent.com/ShafeequrRehman/tableimage/f3fad32cbe8c0d2192d6393dbcd31ed4bfc02b9b/Group%20211.svg');
+            background-size: cover; /* Cover the entire table */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #70707081;
+            background: rgba(0, 0, 0, 0.6); /* Adding transparency to cells for visibility */
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(42, 42, 42, 0.7);
+        }
+
+        .bar-container {
+            width: 100%;
+            background-color: #555;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .bar-value {
+            height: 30px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Characteristic</th>
+                <th>Share of Respondents</th>
+                <th>Progress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2021</td>
+                <td>65%</td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar-value" style="width: 65%; background-color: #1e88e5;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>34%</td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar-value" style="width: 34%; background-color: #00bcd4;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>73%</td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar-value" style="width: 73%; background-color: #4caf50;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>87%</td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar-value" style="width: 87%; background-color: #ff9800;"></div>
+                    </div>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+</body>
+</html>
